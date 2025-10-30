@@ -10,7 +10,7 @@ import re
 import warnings
 #Cargar modelos
 COCO_model = torch.hub.load('ultralytics/yolov5', 'yolov5s')
-license_plate_detector = torch.hub.load('ultralytics/yolov5', 'custom', path=r"C:\Users\ELOAN\Desktop\matriculitas_def\detectror de matriculas_guardado\runs\license_plate\train_v1\weights\best.pt")
+license_plate_detector = torch.hub.load('ultralytics/yolov5', 'custom', path="best.pt")
 
 warnings.filterwarnings('ignore', category=FutureWarning)
 warnings.filterwarnings('ignore', category=UserWarning)
@@ -24,7 +24,7 @@ a = int(input("Selecciona la fuente (1/2/3): "))
 try:
     if a == 1:
         # Archivo de video
-        video_path = r"C:\Users\ELOAN\Desktop\matriculitas_def\def\fotillos\video.mp4"
+        video_path = r"video.mp4"
         cap = cv2.VideoCapture(video_path)
         source_name = os.path.basename(video_path)
         
