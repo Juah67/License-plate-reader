@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+detecciones_historico/
+pruebas/
+runs/
